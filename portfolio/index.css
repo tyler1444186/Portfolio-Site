@@ -1,0 +1,179 @@
+html {
+  scroll-behavior: smooth;
+}
+#my_canvas {
+  background-color: black;
+  width: 100%;
+  height: 40em;
+  position: absolute;
+  top: 0;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  height: 160em;
+  padding: 0;
+  background: rgb(0, 0, 0);
+  color: whitesmoke;
+}
+
+.container1 {
+  position: absolute;
+  left: 31%;
+  top: 40%;
+  justify-content: center;
+  letter-spacing: 15px;
+}
+.container1 span {
+  color: white;
+  display: block;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+}
+#text1 {
+  font-size: 80px;
+  margin-bottom: 20px;
+  animation: text 3s 1;
+}
+#text2 {
+  font-size: 40px;
+  position: relative;
+  margin-bottom: 10px;
+  color: lightblue;
+  animation: mover 3s linear;
+}
+#text3 {
+  font-size: 25px;
+  position: relative;
+  color: lightgreen;
+  animation: mover 3s linear;
+}
+@keyframes mover {
+  0% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 0;
+  }
+}
+@keyframes text {
+  0% {
+    opacity: 0.3;
+    color: black;
+    margin-bottom: -80px;
+  }
+  30% {
+    opacity: 0.6;
+    left: 5%;
+    letter-spacing: 5px;
+    margin-bottom: -80px;
+  }
+  85% {
+    letter-spacing: 15px;
+    margin-bottom: -80px;
+    opacity: 0.8;
+  }
+}
+
+nav ul {
+  position: absolute;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: absolute;
+  left: 34%;
+  top: 3%;
+  font-size: larger;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  padding: 20px 22px;
+  text-decoration: none;
+  color: darkgray;
+}
+.home h1 {
+  position: absolute;
+  top: 135%;
+  left: 50%;
+  text-shadow: -2x 1px;
+  text-decoration: underline lightgreen;
+}
+#descr {
+  position: absolute;
+  left: 50%;
+  top: 155%;
+  font-size: x-large;
+  width: 600px;
+}
+
+.home img {
+  position: absolute;
+  top: 130%;
+  left: 6%;
+  height: 500px;
+  border-radius: 50%;
+  border: solid 3px lightgray;
+}
+
+.projects {
+  text-align: center;
+}
+.projects h1 {
+  position: absolute;
+  left: 593px;
+  top: 250%;
+  text-decoration: underline rosybrown;
+}
+
+.projects ul {
+  display: inline-flex;
+  position: absolute;
+  left: 42.2%;
+  top: 260%;
+  color: skyblue;
+  text-decoration: underline rosybrown;
+}
+
+.projects ul li {
+  margin: 0 10px;
+  list-style: none;
+  font-size: x-large;
+}
+
+.projects text {
+  position: absolute;
+  width: 600px;
+  font-size: x-large;
+  top: 270%;
+  left: 28%;
+}
+
+.contact h1 {
+  position: absolute;
+  left: 42%;
+  top: 350%;
+  text-decoration: underline lightblue;
+}
+
+.contact div {
+  position: absolute;
+  left: 45%;
+  top: 363%;
+}
+.contact email {
+  position: absolute;
+  left: 44%;
+  top: 370%;
+  font-size: larger;
+  margin-top: 10px;
+}
+.contact img {
+  max-height: 40px;
+}
