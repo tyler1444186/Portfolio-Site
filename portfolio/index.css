@@ -3,24 +3,29 @@ html {
 }
 #my_canvas {
   background-color: black;
-  width: 100%;
-  height: 40em;
+  width: 100vw;
+  height: 100vh;
   position: absolute;
   top: 0;
 }
 
 body {
+  display: flex;
   margin: 0;
   overflow-x: hidden;
-  height: 160em;
+  height: 100vh;
+  width: 100vw;
   padding: 0;
   background: rgb(0, 0, 0);
   color: whitesmoke;
 }
+div {
+  height: 100vh;
+  width: 100vw;
+}
 
 .container1 {
   position: absolute;
-  left: 31%;
   top: 40%;
   justify-content: center;
   letter-spacing: 15px;
@@ -75,6 +80,11 @@ body {
     opacity: 0.8;
   }
 }
+nav {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
 
 nav ul {
   position: absolute;
@@ -83,7 +93,6 @@ nav ul {
   padding: 0;
   overflow: hidden;
   position: absolute;
-  left: 34%;
   top: 3%;
   font-size: larger;
 }
@@ -99,6 +108,7 @@ nav ul li a {
   color: darkgray;
 }
 .home h1 {
+  display: flex;
   position: absolute;
   top: 135%;
   left: 50%;
@@ -123,57 +133,63 @@ nav ul li a {
 }
 
 .projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
   text-align: center;
 }
+
 .projects h1 {
-  position: absolute;
-  left: 593px;
-  top: 250%;
   text-decoration: underline rosybrown;
 }
 
 .projects ul {
-  display: inline-flex;
+  width: 100%;
   position: absolute;
-  left: 42.2%;
-  top: 260%;
+  transform: translate(-1.2%, 600%);
   color: skyblue;
   text-decoration: underline rosybrown;
 }
 
 .projects ul li {
-  margin: 0 10px;
   list-style: none;
   font-size: x-large;
 }
 
 .projects text {
-  position: absolute;
   width: 600px;
   font-size: x-large;
-  top: 270%;
-  left: 28%;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
 }
 
 .contact h1 {
-  position: absolute;
-  left: 42%;
-  top: 350%;
   text-decoration: underline lightblue;
 }
 
 .contact div {
-  position: absolute;
-  left: 45%;
-  top: 363%;
+  margin-top: 20px;
 }
+
 .contact email {
-  position: absolute;
-  left: 44%;
-  top: 370%;
   font-size: larger;
   margin-top: 10px;
 }
+
 .contact img {
   max-height: 40px;
+  margin-top: 20px;
+}
+
+@media (min-width: 1352px) {
 }
