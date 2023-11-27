@@ -1,3 +1,4 @@
+'use strict';
 let canvas, ctx, w, h, units;
 let unitCount = 100;
 let hue = 0;
